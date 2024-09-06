@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style-home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine&family=Roboto:ital,wght@0,100;0,500;1,400;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cousine&family=Roboto:ital,wght@0,100;0,500;1,400;1,900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>home page</title>
+</head>
+<body class="back">
+        <div class="navbar">
+                <h1 class="logo">Hostel Management</h1>
+                <ul class="menu">
+                    <li class="active"><a class="c" href="index.html">Home</a></li>
+                    <li><a class="c" href="playing.html">Hostels</a></li>
+                      <li><a class="c" href="booking.html">Details</a></li>              
+                   <li><a class="c" href="contact.html">contact us</a></li>
+                </ul>
+                <div class="log">
+                <ul class="menu">
+                      <li><a class="c" href="login.html">log out</a></li>
+                </ul>
+                 </div>
+        </div>
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+           <img src="http://shriganeshconstruction.com/wp-content/uploads/2016/11/BEE-ENN-COLLEGE-HOSTEL-BUILDING1.jpg">
+        </div>
+        <div class="slide">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/SRMPS_-_Hostel_Room.jpg/1024px-SRMPS_-_Hostel_Room.jpg ">
+        </div>
+        <div class="slide">
+          <img src="https://i.ytimg.com/vi/8weg7FABwFk/maxresdefault.jpg">
+        </div>
+        <div class="slide">
+          <img src="https://hostelgeeks.com/wp-content/uploads/2016/07/hostelgym-hektorhostel.jpg">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+
+    <div class="movie-name">
+        <h1>Hostel Rooms</h1>
+    </div>
+    <div class="movie-slide">
+    <div class="movie-list">
+        <div class="movie">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.UCOizSE5_wjUkod0K3lIywAAAA&pid=Api&P=0">
+        </div>
+        <h3>Vinay Hostel</h3>
+    </div>
+        <div class="movie-list">
+        <div class="movie">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.Xu5ypveUh08VoaAtZtpSrQHaFj&pid=Api&P=0">
+        </div>
+        <h3>RK Hostel</h3>
+    </div>
+        <div class="movie-list">
+        <div class="movie">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.Wno2DjBke8NquLmLlTtZCQHaDI&pid=Api&P=0">
+        </div>
+        <h3>Girls Hostel</h3>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+
+</body>
+</html>
